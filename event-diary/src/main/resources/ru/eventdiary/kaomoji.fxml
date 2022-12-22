@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="182.0" layoutY="14.0" prefHeight="34.0" prefWidth="134.0" text="Каомоджи">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="59.0" layoutY="58.0" prefHeight="207.0" prefWidth="381.0" text="Smile:&#10;╰(*´︶`*)╯  &#10;(ﾉ´ヮ`)ﾉ*: ･ﾟ &#10;( ◕▿◕ )   &#10;( „• ᴗ •„ )    &#10;(´･ᴗ･ ` )   &#10;(๑˘︶˘๑)&#10;&#10;Love:&#10;(ﾉ´ з `)ノ   &#10;( ´ ∀ `)ノ～ ❤   &#10;(´｡• ᵕ •｡`) ❤    &#10;Σ―(〃°ω°〃)❤→  &#10;❤(ɔˆз(ˆ⌣ˆc)&#10;&#10;Angry:&#10;ψ( ` ∇ ´ )ψ    &#10;ヽ(`⌒´メ)ノ    &#10;ψ(▼へ▼メ)～→     &#10;٩(๑`^´๑)۶    &#10;٩(╬ʘ益ʘ╬)۶&#10;&#10;Sad:&#10;(ಡ‸ಡ)    &#10;(｡•́︿•̀｡)     &#10;( ╥﹏╥ )   &#10;(｡╯︵╰｡)   &#10;〣( ºΔº )〣&#10;&#10;Animals:&#10;(^=◕ᴥ◕=^)    &#10;ฅ(•ㅅ•❀)ฅ    &#10;ฅ(^◕ᴥ◕^)ฅ&#10;U・ᴥ・U     &#10;V●ᴥ●V&#10;ʕ ᵔᴥᵔ ʔ     &#10;(*￣(ｴ)￣*)&#10;(￣(00)￣)    &#10;( ´(00)ˋ )&#10;( ◉Θ◉ )     &#10;( ・Θ・ )&#10;/╲/╭( ͡°͡° ͜ʖ ͡°͡°)╮/╱\    &#10;/╲/╭(ರರ⌓ರರ)╮/╱\" />
+   </children>
+</AnchorPane>
