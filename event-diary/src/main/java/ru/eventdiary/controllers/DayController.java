@@ -43,7 +43,7 @@ public class DayController implements Initializable {
         title.setText(String.format(title.getText(), index));
         File file = new File(DAYS_TEXT_PATH + File.separator + "day" + index + ".txt");
         if (!file.exists()) return;
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) { //чтение
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) { 
             textarea.setText(reader.lines().collect(Collectors.joining("\n"))); //установка текста, предусмотрение переноса строк
         } catch (IOException e) {
             e.printStackTrace();
@@ -51,7 +51,7 @@ public class DayController implements Initializable {
     }
 
     @FXML
-    public void onClearClick() { //при нажатии на кнопку очистки
+    public void onClearClick() { 
         textarea.setText("");
     }
 
