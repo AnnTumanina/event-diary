@@ -15,39 +15,20 @@ import java.nio.file.Paths;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
-/**
- * контроллер сцены с полем для ввода результата дня
-  */
-public class DayController implements Initializable {
 
-    /**
-     * путь куда будут сохраняться все тексты о днях
-      */
+public class DayController implements Initializable {
+    
     public static final String DAYS_TEXT_PATH = System.getProperty("user.home") + File.separator + "EventDiary";
 
-    /**
-     * главное окно
-     */
     private final Stage primaryStage;
 
-    /**
-     * предыдущая сцена (с календарем)
-     */
     private final Scene calendarScene;
-    /**
-     * номер дня
-     */
+ 
     private final int index;
 
-    /**
-     * заголовок с номером дня
-     */
     @FXML
     private Label title;
 
-    /**
-     * текстовое поле
-     */
     @FXML
     private TextArea textarea;
 
@@ -56,7 +37,6 @@ public class DayController implements Initializable {
         this.calendarScene = calendarScene;
         this.index = index;
     }
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) { //вызывается при открытии окна для того чтобы сразу считать значение текстАреа из файла
@@ -86,16 +66,16 @@ public class DayController implements Initializable {
     }
 
     @FXML
-    public void onBackClick() { //метод возврата а главное окно
+    public void onBackClick() { //метод возврат в главное окно
         saveTextToFile();
         primaryStage.setScene(calendarScene);
     }
 
     private void saveTextToFile() { //сохранение текста при выходе
         if (textarea.getText().isBlank()) return; // если текстовое поле пустое
-        File file = new File(DAYS_TEXT_PATH + File.separator + "day" + index + ".txt"); // создаем файл
+        File file = new File(DAYS_TEXT_PATH + File.separator + "day" + index + ".txt");
         File parent = file.getParentFile(); // получаем папку, в которой лежит файл
-        if (!parent.exists() && !parent.mkdirs()) return; // если этой папки не сущестует и ее не получилось создать, то пропускаем следующие действия
+        if (!parent.exists() && !parent.mkdirs()) return; 
         try (FileWriter writer = new FileWriter(file)) {
             writer.write(textarea.getText());
         } catch (IOException e) {
