@@ -68,7 +68,7 @@
                   <Insets />
                </opaqueInsets>
             </GridPane>
-            <Label alignment="CENTER" layoutX="188.0" layoutY="32.0" prefHeight="38.0" prefWidth="223.0" text="Дневник событий" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="188.0" layoutY="32.0" prefHeight="38.0" prefWidth="223.0" text="Календарь заметок" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
