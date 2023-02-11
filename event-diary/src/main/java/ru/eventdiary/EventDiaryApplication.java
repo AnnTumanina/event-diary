@@ -12,7 +12,7 @@ public class EventDiaryApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Scene scene = StageFactory.createCalendarScene(stage);
-        stage.setTitle("Event Diary");
+        stage.setTitle("Календарь заметок");
         stage.setScene(scene);
         stage.show();
     }
